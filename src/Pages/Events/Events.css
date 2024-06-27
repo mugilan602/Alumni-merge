@@ -1,0 +1,38 @@
+.safety-container {
+    padding: 20px;
+    background-color: white;
+  }
+  
+  .card-container {
+    width: 90%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+  }
+  
+  .events-card {
+    background-color: white;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .events-card:hover {
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .slider-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .slider img {
+    width: 100%;
+    flex-shrink: 0;
+  }

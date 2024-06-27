@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+body {
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  list-style: none;
+  background: #337ab7;
+  text-align: center;
+}
+
+.submenu {
+  display: inline-block;
+  position: relative;
+}
+
+.subsubmenu {
+  display: block;
+  padding: 20px 25px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+}
+
+ul li ul.dropdown li {
+  display: block;
+  color: black;
+  background: #337ab7;
+  margin: 2px 0px;
+}
+
+ul li ul.dropdown {
+  width: auto;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+ul li a:hover {
+  color: #ffcb29;
+}
+
+ul li:hover ul.dropdown {
+  display: block;
+}
+.container-2xl {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.safety-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  align-items: center;
+}
+
+.content1 img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* @media only screen and (max-width: 768px) { */
+  /* Adjustments for smaller devices */
+  /* .safety-container {
+      grid-template-columns: 1fr;
+  }
+} */

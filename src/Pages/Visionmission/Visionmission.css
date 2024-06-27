@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');   
+*{padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+  }
+  
+  body {
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+  }
+.vm_heading{
+    color:#103A55 ;
+    font-weight: 700;
+    font-size: 32px;
+    border-bottom: 3px solid #fcb900;
+    font-family: "Roboto";
+}
+.vm_subheading{
+    color: black;
+    font-size: 28px;
+    margin: 10px;
+    font-weight: 500;
+    font-family: "Roboto";
+    padding: 5px;
+    padding-left: 7px;
+}
+.vm_subheading{
+    margin-left: auto;
+    font-family: "Roboto";
+    background: linear-gradient(89deg, #288ed6 8.63%, #E9DE4D 95.43%), #ffffff;
+    background-size:cover;
+    
+
+}
+.vm_paragragh{
+  margin: 10px;
+  text-align:center;
+  margin-right: auto;
+
+}
+
+.vm_list {
+  color: black;
+  margin: 10px 0;
+  text-align: start;
+  padding-left: 20px;
+}
+
+.vm_list li {
+  margin-bottom: 5px;
+}
