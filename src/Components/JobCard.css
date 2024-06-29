@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.job-listings {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 16px;
+}
+
+@media (min-width: 640px) {
+    .job-listings {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .job-listings {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.job-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.job-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.job-card-header {
+    background-color: #3b82f6;
+    color: white;
+    padding: 16px;
+}
+
+.job-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.job-card-body {
+    padding: 16px;
+}
+
+.job-detail {
+    color: #4a5568;
+    margin-bottom: 8px;
+}
+
+.job-description {
+    color: #4a5568;
+    margin-bottom: 16px;
+}
+
+.apply-button {
+    display: block;
+    background-color: #3b82f6;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+    background-color: #2563eb;
+}

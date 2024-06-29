@@ -1,26 +1,46 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './JobCard.css';
 
-const JobCard = ({ job }) => {
-  const { _id, title, company, pay, experience } = job;
+function JobCard({ job }) {
+  const { _id, title, company, pay, experience, location } = job;
   const jobId = _id;
 
   return (
-    <div className="max-w-md bg-white shadow-lg rounded-lg overflow-hidden m-4">
-      <div className="px-6 py-4">
-        <div className="font-bold text-xl mb-2">{title}</div>
-        <p className="text-gray-700 text-base mb-2">Company: {company}</p>
-        <p className="text-gray-700 text-base mb-2">Pay: {pay}</p>
-        <p className="text-gray-700 text-base mb-2">Experience: {experience}</p>
-        <Link
-          to={`/apply/${jobId}`} 
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-        >
-          Apply
-        </Link>
-      </div>
+    <div className="2xl:container ">
+      <div className="w-[90] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="container">
+            <div className="">
+              <div className="job-card">
+                <div className="job-card-header">
+                  <h2 className="job-title">{title}</h2>
+                  <p>{company}</p>
+                </div>
+                <div className="job-card-body">
+                  {location && (
+                    <p className="job-detail">
+                      <strong>Location:</strong> {location}
+                    </p>
+                  )}
+                  <p className="job-detail">
+                    <strong>Salary:</strong> {pay}
+                  </p>
+                  <p className="job-detail">
+                    <strong>Experience:</strong> {experience}
+                  </p>
+                  <Link
+                    to={`/apply/${jobId}`}
+                    className="apply-button"
+                  >
+                    Apply
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
   );
-};
+}
 
 export default JobCard;
